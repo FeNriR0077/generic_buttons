@@ -2,10 +2,19 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+button {
+  margin: 1rem 1.5rem;
+}
+
 * { 
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.heading-text{
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 .base-btn {
@@ -32,14 +41,14 @@
 }
 
 .btn-filled-secondary{
-  background-color:  #00897b;
+  background-color:  #ff6700;
   color: white;
   font-weight: 500;
   border: 1px solid transparent;
 
 }
 .btn-filled-secondary:hover {
-  background-color: #018073;
+  background-color: #f36201;
   transition: all 100ms ease-out;
 }
 
@@ -91,13 +100,13 @@
 }
 
 .btn-outlined-secondary {
-  color: #00897b;
+  color: #ff6700;
   font-weight: 500;
   border: none;
-  outline: 1px solid #00897b;
+  outline: 1px solid #ff6700;
 }
 .btn-outlined-secondary:hover {
-  background-color: #00897b10;
+  background-color: #ff670010;
   outline-width: 2px;
   transition: all 100ms ease-out;
 }
@@ -150,12 +159,12 @@
 }
 
 .btn-text-secondary {
-  color: #00897b;
+  color: #ff6700;
   font-weight: 500;
   border: 1px solid transparent;
 }
 .btn-text-secondary:hover{
-  background-color: #00897b10;
+  background-color: #ff670010;
   transition: all 100ms ease-out;
 }
 
@@ -206,6 +215,15 @@
 .btn-sm {
   padding: 0.5rem 1rem;
   font-size: 0.8rem;
-  border-radius: 4px;
 }
 
+
+
+
+/* extra */
+
+.button-container {
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0 ;
+}
