@@ -17,8 +17,7 @@ function App() {
         <div className="base-button button-container">
           <BaseButton buttonId={"submitt"} buttonText={"BASE"} />
         </div>
-        
-        
+
         <div className="primary-button-container button-container">
           <p>Primary Color</p>
           <Button variant={"filled"} onClick={handleClick} />
@@ -29,7 +28,11 @@ function App() {
         <div className="secondary-button-container button-container">
           <p>Secondary Color</p>
           <Button variant={"filled"} color="secondary" onClick={handleClick} />
-          <Button variant={"outlined"} color="secondary" onClick={handleClick} />
+          <Button
+            variant={"outlined"}
+            color="secondary"
+            onClick={handleClick}
+          />
           <Button variant={"text"} color="secondary" onClick={handleClick} />
         </div>
 
@@ -54,6 +57,12 @@ function App() {
           <Button variant={"text"} color="error" onClick={handleClick} />
         </div>
 
+        <div className="button-container">
+          From Children
+          <Button buttonText="hi" variant={"filled"} color="error" onClick={handleClick} >
+            Children
+          </Button>
+        </div>
       </div>
     </div>
   );

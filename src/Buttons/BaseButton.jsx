@@ -6,7 +6,7 @@ const BaseButton = (props) => {
     buttonId = "",
     buttonClass = "",
     disabled = false,
-    onClick = null
+    onClick = null,
   } = props;
 
   const baseButtonClasses = "base-btn"

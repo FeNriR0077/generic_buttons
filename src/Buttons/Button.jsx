@@ -1,8 +1,9 @@
 import BaseButton from "./BaseButton";
+import PropTypes from 'prop-types';
 
 const Button = (props) => {
 
-  const {
+  let {
     buttonText = "",
     buttonId = "",
     buttonClass = "",
@@ -10,14 +11,17 @@ const Button = (props) => {
     variant = "filled",
     color = "primary",
     size = "md",
-    onClick=null
+    onClick=null,
+    startIcon=null,
+    endIcon=null,
+    children
   } = props
   
 
   return (
     <>
       <BaseButton
-        buttonText={buttonText}
+        buttonText={children ? buttonText=children : buttonText}
         buttonClass={`btn-${variant}-${color} btn-${size} ${buttonClass}`}
         buttonId={buttonId}
         disabled={disabled}
@@ -27,6 +31,12 @@ const Button = (props) => {
   );
 };
 
+Button.propTypes = {
+  disabled: PropTypes.bool,
+  onClick: PropTypes.func,
+  children: PropTypes.string
+  
+};
 
 
 export default Button;
