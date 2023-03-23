@@ -6,9 +6,11 @@ const BaseButton = (props) => {
     buttonId = "",
     buttonClass = "",
     disabled = false,
+    onClick = null
   } = props;
 
   const baseButtonClasses = "base-btn"
+
 
   return (
     <>
@@ -16,6 +18,7 @@ const BaseButton = (props) => {
         className={`${baseButtonClasses} ${buttonClass}`} 
         id={buttonId} 
         disabled={disabled} 
+        onClick={onClick}
       >
         {buttonText ? buttonText : "TEXT"}
       </button>
@@ -24,7 +27,8 @@ const BaseButton = (props) => {
 };
 
 BaseButton.propTypes = {
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  onClick: PropTypes.func
 };
 
 

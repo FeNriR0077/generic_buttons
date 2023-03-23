@@ -9,7 +9,8 @@ const Button = (props) => {
     disabled = false,
     variant = "filled",
     color = "primary",
-    size = "md"
+    size = "md",
+    onClick=null
   } = props
   
 
@@ -17,9 +18,10 @@ const Button = (props) => {
     <>
       <BaseButton
         buttonText={buttonText}
-        buttonClass={`btn-${variant} btn-${color} btn-${size} ${buttonClass}`}
+        buttonClass={`btn-${variant}-${color} btn-${size} ${buttonClass}`}
         buttonId={buttonId}
         disabled={disabled}
+        onClick={onClick}
       />
     </>
   );

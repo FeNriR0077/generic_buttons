@@ -5,18 +5,40 @@ import BaseButton from "./Buttons/BaseButton";
 import Button from "./Buttons/Button";
 
 function App() {
+
+  const handleClick = () => {
+    console.log("clickeddd")
+  }
+
   return (
     <div className="App">
       <h1 className="heading-text heading">Buttons</h1>
 
       <div className="base-button">
         <BaseButton
-          buttonClass = {"btn-filled"}
           buttonId = {"submitt"}
           buttonText = {"BASE"}
         />
 
-        <Button />
+        <Button
+          variant={"filled"}
+          color={"primary"}
+          size = "md"
+          onClick={handleClick}
+        />
+        <Button
+          variant={"outlined"}
+          color="secondary"
+          size="md"
+        />
+        <div>
+        <Button
+          variant={"text"}
+          color="primary"
+          size="md"
+        />
+        </div>
+        
       </div>
     </div>
   );

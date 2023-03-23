@@ -17,35 +17,195 @@
   cursor: pointer;
 }
 
-/* ---color------ */
 
-.btn-secondary{
-  background-color:  #fdb514;
-  color: black;
+/* ---filled------ */
 
-}
-.btn-primary{
+.btn-filled-primary{
   background-color:  #2196f3;
   color: white;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+.btn-filled-primary:hover {
+  background-color: #1886e0;
+  transition: all 100ms ease-out;
 }
 
-.btn-tertiary{
-  background-color: whitesmoke;
-  color: black;
+.btn-filled-secondary{
+  background-color:  #00897b;
+  color: white;
+  font-weight: 500;
+  border: 1px solid transparent;
+
+}
+.btn-filled-secondary:hover {
+  background-color: #018073;
+  transition: all 100ms ease-out;
 }
 
-.btn-success {
+.btn-filled-tertiary{
+  background-color: #d500f9;
+  font-weight: 500;
+  color: white;
+  border: 1px solid transparent;
+}
+.btn-filled-tertiary:hover {
+  background-color: #bf03e0;
+  transition: all 100ms ease-out;
+}
+
+.btn-filled-success {
   background-color: #03c988;
+  font-weight: 500;
   color: white;
+  border: 1px solid transparent;
 }
-.btn-error {
+.btn-filled-success:hover {
+  background-color: #05b47a;
+  transition: all 100ms ease-out;
+}
+
+.btn-filled-error {
   background-color: #ff0032;
+  font-weight: 500;
   color: white;
+  border: 1px solid transparent;
+}
+.btn-filled-error:hover {
+  background-color: #dd022e;
+  transition: all 100ms ease-out;
 }
 
 
-/* -------variant------------- */
-
-.btn-filled {
-  background-color: #2196f3;
+/* ---------outlined----------------- */
+.btn-outlined-primary {
+  color: #2196f3;
+  font-weight: 500;
+  border:none;
+  outline: 1px solid #2196f3;
 }
+.btn-outlined-primary:hover {
+  background-color: #2195f310;
+  outline-width: 2px;
+  transition: all 100ms ease-out;
+}
+
+.btn-outlined-secondary {
+  color: #00897b;
+  font-weight: 500;
+  border: none;
+  outline: 1px solid #00897b;
+}
+.btn-outlined-secondary:hover {
+  background-color: #00897b10;
+  outline-width: 2px;
+  transition: all 100ms ease-out;
+}
+
+.btn-outlined-tertiary {
+  color: #d500f9;
+  font-weight: 500;
+  border: none;
+  outline: 1px solid #d500f9;
+}
+.btn-outlined-tertiary:hover {
+  background-color: #d400f910;
+  outline-width: 2px;
+  transition: all 100ms ease-out;
+}
+
+.btn-outlined-error {
+  color: #ff0032;
+  font-weight: 500;
+  border: none;
+  outline: 1px solid #ff0032;
+}
+.btn-outlined-error:hover {
+  background-color: #ff003210;
+  outline-width: 2px;
+  transition: all 100ms ease-out;
+}
+
+.btn-outlined-success {
+  color: #03c988;
+  font-weight: 500;
+  border: none;
+  outline: 1px solid #03c988;
+}
+.btn-outlined-success:hover {
+  background-color: #03c98710;
+  outline-width: 2px;
+  transition: all 100ms ease-out;
+}
+
+/* ---------text ----------------- */
+.btn-text-primary {
+  color: #2196f3;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+.btn-text-primary:hover {
+  background-color: #2195f310;
+  transition: all 100ms ease-out;
+}
+
+.btn-text-secondary {
+  color: #00897b;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+.btn-text-secondary:hover{
+  background-color: #00897b10;
+  transition: all 100ms ease-out;
+}
+
+.btn-text-tertiary {
+  color: #d500f9;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+.btn-text-tertiary:hover {
+  background-color: #d400f910;
+  transition: all 100ms ease-out;
+}
+
+.btn-text-error {
+  color: #ff0032;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+.btn-text-error:hover {
+  background-color: #ff003210;
+  transition: all 100ms ease-out;
+}
+
+.btn-text-success {
+  color: #03c988;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+.btn-text-success:hover {
+  background-color: #03c98710;
+  transition: all 100ms ease-out;
+}
+
+
+
+/* -----------size-------------- */
+
+.btn-lg {
+  padding: 0.8rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+.btn-md {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
