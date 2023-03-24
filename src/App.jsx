@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import BaseButton from "./Buttons/BaseButton";
 import Button from "./Buttons/Button";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const handleClick = () => {
@@ -15,17 +17,32 @@ function App() {
         <h1 className="heading-text heading">Buttons</h1>
 
         <div className="base-button button-container">
-          <BaseButton buttonId={"submitt"} buttonText={"BASE"} />
+          <BaseButton id={"submitt"} >
+            BASE
+          </BaseButton>
         </div>
 
         <div className="primary-button-container button-container">
           <p>Primary Color</p>
-          <Button variant={"filled"} onClick={handleClick} />
-          <Button variant={"outlined"} onClick={handleClick} />
-          <Button variant={"text"} onClick={handleClick} />
+          <Button variant={"filled"} onClick={handleClick} >
+            FILLED
+          </Button>
+
+          <Button  size="lg" color="secondary" variant={"outlined"} onClick={handleClick}>
+            OUTLINED
+          </Button>
+
+          <Button variant={"text"} onClick={handleClick} >
+            TEXT
+          </Button>
+
+          <Button variant="text" size="md" onClick={handleClick} >
+            <FontAwesomeIcon icon={faUser} />
+          </Button>
+          
         </div>
 
-        <div className="secondary-button-container button-container">
+        {/* <div className="secondary-button-container button-container">
           <p>Secondary Color</p>
           <Button variant={"filled"} color="secondary" onClick={handleClick} />
           <Button
@@ -61,8 +78,8 @@ function App() {
           From Children
           <Button buttonText="hi" variant={"filled"} color="error" onClick={handleClick} >
             Children
-          </Button>
-        </div>
+          </Button> 
+        </div> */}
       </div>
     </div>
   );

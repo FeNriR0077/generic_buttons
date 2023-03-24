@@ -2,10 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-button {
-  margin: 1rem 1.5rem;
-}
-
 * { 
   box-sizing: border-box;
   padding: 0;
@@ -202,6 +198,10 @@ button {
 
 /* -----------size-------------- */
 
+.btn-xl {
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+}
 .btn-lg {
   padding: 0.8rem 1.3rem;
   font-size: 1.1rem;
@@ -218,9 +218,26 @@ button {
 }
 
 
+/* icons */
+.start-icon {
+  padding-right: .4rem;
+}
+.end-icon {
+  padding-left: .4rem;
+}
 
+/* width */
+.width-full{
+  width: 100%;
+}
+.width-half{
+  width: 50%;
+}
+.width-quarter{
+  width: 25%;
+}
 
-/* extra */
+/* ----------extra------------ */
 
 .button-container {
   width: 100%;
