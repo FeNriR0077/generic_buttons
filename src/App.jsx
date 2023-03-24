@@ -1,10 +1,7 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import BaseButton from "./Buttons/BaseButton";
-import Button from "./Buttons/Button";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import BaseButton from "./components/Buttons/BaseButton";
+import Button from "./components/Buttons/Button";
 
 function App() {
   const handleClick = () => {
