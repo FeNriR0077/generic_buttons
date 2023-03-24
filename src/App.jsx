@@ -44,7 +44,7 @@ function App() {
             USER
           </Button>
 
-          <Button variant="outlined" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} endIcon={<FontAwesomeIcon icon={faUser} />}>
+          <Button variant="filled" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} endIcon={<FontAwesomeIcon icon={faUser} />}>
             USER
           </Button>
 
@@ -68,7 +68,7 @@ function App() {
             TEXT
           </Button>
 
-          <Button variant="filled" color="secondary" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} >
+          <Button variant="outlined" color="secondary" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} >
             USER
           </Button>
 
@@ -80,7 +80,7 @@ function App() {
             USER
           </Button>
 
-          <Button variant="text" color="secondary" size="md" onClick={handleClick}>
+          <Button variant="filled" color="secondary" size="md" onClick={handleClick}>
             <FontAwesomeIcon icon={faUser} />
           </Button>
         </div>
@@ -99,19 +99,19 @@ function App() {
             TEXT
           </Button>
 
-          <Button variant="filled" color="tertiary" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} >
+          <Button variant="text" color="tertiary" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} >
             USER
           </Button>
 
-          <Button variant="text" color="tertiary" size="md" onClick={handleClick} endIcon={<FontAwesomeIcon icon={faUser} />}>
+          <Button variant="filled" color="tertiary" size="md" onClick={handleClick} endIcon={<FontAwesomeIcon icon={faUser} />}>
             USER
           </Button>
 
-          <Button variant="outlined" color="tertiary" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} endIcon={<FontAwesomeIcon icon={faUser} />}>
+          <Button variant="text" color="tertiary" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} endIcon={<FontAwesomeIcon icon={faUser} />}>
             USER
           </Button>
 
-          <Button variant="text" color="tertiary" size="md" onClick={handleClick}>
+          <Button variant="outlined" color="tertiary" size="md" onClick={handleClick}>
             <FontAwesomeIcon icon={faUser} />
           </Button>
         </div>
@@ -134,11 +134,11 @@ function App() {
             USER
           </Button>
 
-          <Button variant="text" color="success" size="md" onClick={handleClick} endIcon={<FontAwesomeIcon icon={faUser} />}>
+          <Button variant="outlined" color="success" size="md" onClick={handleClick} endIcon={<FontAwesomeIcon icon={faUser} />}>
             USER
           </Button>
 
-          <Button variant="outlined" color="success" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} endIcon={<FontAwesomeIcon icon={faUser} />}>
+          <Button variant="filled" color="success" size="md" onClick={handleClick} startIcon={<FontAwesomeIcon icon={faUser} />} endIcon={<FontAwesomeIcon icon={faUser} />}>
             USER
           </Button>
 
@@ -180,8 +180,8 @@ function App() {
 
         <div className="button-container">
           From Children
-          <Button variant={"filled"} color="error" onClick={handleClick} >
-            Children
+          <Button variant={"filled"} onClick={handleClick} >
+            CHILDREN
           </Button> 
         </div> 
       </div>
