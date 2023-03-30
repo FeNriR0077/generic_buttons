@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import BaseButton from "./components/Buttons/BaseButton";
-import Button from "./components/Buttons/Button";
+import BaseButton from "./components/Buttons/index"
+import Button from "./components/Buttons/index";
 
 function App() {
   const handleClick = () => {
@@ -180,7 +180,7 @@ function App() {
           <Button variant={"filled"} onClick={handleClick} >
             CHILDREN
           </Button> 
-        </div> 
+        </div>
       </div>
     </div>
   );
